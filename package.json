@@ -7,6 +7,7 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
+    "dist": "nuxt build && nuxt generate && rm -rf dist && cp -R .output/public dist",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
