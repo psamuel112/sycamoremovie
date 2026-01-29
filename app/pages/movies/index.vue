@@ -88,6 +88,10 @@ const movieStore = useMovieStore();
 onMounted(() => {
   movieStore.fetchMovies(1);
 });
+useHead({
+  title: 'Popular Movies',
+})
+
 const goToMovie = (id: number) => {
   router.push(`/movies/${id}`);
 };

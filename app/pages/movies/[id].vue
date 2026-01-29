@@ -58,6 +58,9 @@ import LoadingSpinner from '~/components/LoadingSpinner.vue'
 const route = useRoute()
 const router = useRouter()
 const movieStore = useMovieStore()
+useHead({
+  title: 'Popular Movies',
+})
 
 
 onMounted(() => {
