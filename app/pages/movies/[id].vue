@@ -17,6 +17,7 @@
 
     <div v-if="movieStore.selectedMovie && !movieStore.loading" class="flex flex-col md:flex-row gap-6">
       <img
+       loading="lazy"
         v-if="movieStore.selectedMovie.poster_path"
         :src="`https://image.tmdb.org/t/p/w500${movieStore.selectedMovie.poster_path}`"
         class="rounded shadow-md md:w-1/3"
